@@ -1,0 +1,100 @@
+<html>
+<head>
+    <title>Animal Matching</title>
+    <meta charset="utf-8">
+    <link media="all" href="css/common.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            height: 720px;
+            text-align: center;
+            background-image: url(http://www.kawarthasexualassaultcentre.com/wp-content/uploads/2015/08/background.jpg);
+        }
+
+        .text {
+            text-align: center;
+            margin-top: 60px;
+            color: #fff;
+        }
+
+        .agin {
+            text-align: center;
+            margin-top: 60px;
+            color: #fff;
+        }
+
+        #game-box {
+            margin: 60px auto;
+            position: relative;
+        }
+
+        #game-box img {
+            float: left;
+            width: 59px;
+            height: 59px;
+            border: 2px solid black;
+        }
+
+        #game-box img.hover {
+            border: 2px solid #ffffff;
+        }
+
+        #game-box img.active {
+            border: 2px solid #0faa31;
+        }
+
+        #game-box img.ishint {
+            border: 2px solid red;
+        }
+
+        #game-box div {
+            background-color: #0faa31;
+            position: absolute;
+            border: 2px solid #0faa31;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        #side {
+            float: right;
+        }
+
+    </style>
+    <script src="ann.js"></script>
+</head>
+
+<body background="background.gif">
+<p style="display: none;" class="agin" id="agin"><input type="button" value="Play Again" onclick="init()"></p>
+<div id="game-box" class="clearfix"></div>
+<div id="great-job"></div>
+<div id="start-pic"></div>
+
+<p id="side">
+
+<p>
+    <button onclick="pauseFunction()" id="stop">Pause</button>
+</p>
+
+<p>
+    <button onclick="getHint()" id="hint"> Hint</button>
+</p>
+
+<p>
+    <button onclick="restart()" id="restart">Restart</button>
+</p>
+
+<p>
+    <button onclick="shuffle()" id="shuffle">Shuffle</button>
+</p>
+
+<p>
+    <button onclick="explainFunction()" id="explain">How to play</button>
+</p>
+
+
+</div>
+
+
+</body>
+</html>
